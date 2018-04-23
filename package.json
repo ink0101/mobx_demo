@@ -1,0 +1,24 @@
+{
+  "name": "mobx_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets react src --out-dir build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ink0101/mobx_demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ink0101/mobx_demo/issues"
+  },
+  "homepage": "https://github.com/ink0101/mobx_demo#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
