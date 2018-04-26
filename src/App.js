@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { HashRouter as Router, Link, Route } from 'react-router-dom'
 
 import './App.css';
-import AppRouter from './route/AppRouter.jsx';
+import DemoRouter from './route/DemoRouter.jsx';
 
 class App extends Component {
   render() {
@@ -18,11 +18,15 @@ class App extends Component {
                 <li>
                   <Link to="/demo1">demo1</Link>
                 </li>
+                <li>
+                  <Link to="/demo2">demo2</Link>
+                </li>
               </ul>
             </nav>
             <div>
               <Route exact={true} strict={true} path="/home" component={Home} />
               <Route exact={true} strict={true} path="/demo1" component={Demo1} />
+              <DemoRouter {...this.props} />
             </div>
           </div>
         </Router>
