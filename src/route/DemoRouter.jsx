@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { HashRouter as Router, Link, Route } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 
 import Demo1 from '../views/Demo1';
 import Demo2 from '../views/Demo2';
