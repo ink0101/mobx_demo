@@ -16,7 +16,14 @@ class Demo3 extends Component {
           <button type="button" onClick={() => {newState.add(this.refs['todoInput'].value)}}>添加</button>
         </div>
         <ul>
-          {newState.list.map(item => <li key={item.id}>{item.title}</li>)}
+          {newState.list.map(item => 
+            <li key={item.id}>
+              {item.title}
+              <button className={item.status === 1 ? "del" : "recover"} onClick={() => {newState.edit({id: item.id, status: item.status === 1 ? 0 : 1})}}>
+                {item.status === 1 ? "删除" : "恢复"}
+              </button>
+            </li>
+          )}
         </ul>
       </div>
     );

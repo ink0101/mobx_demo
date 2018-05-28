@@ -3,3 +3,12 @@ body {
   padding: 20px;
   font-family: sans-serif;
 }
+
+.del {
+  background-color: red;
+  color: #fff;
+}
+.recover {
+  background-color: green;
+  color: #fff;
+}
