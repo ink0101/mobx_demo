@@ -12,3 +12,11 @@ body {
   background-color: green;
   color: #fff;
 }
+
+.con {
+  display: flex;
+  
+}
+.box {
+  flex: 1;
+}

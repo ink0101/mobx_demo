@@ -4,6 +4,7 @@ import { Link, Route } from 'react-router-dom'
 import Demo1 from '../views/Demo1';
 import Demo2 from '../views/Demo2';
 import Demo3 from '../views/Demo3';
+import Demo4 from '../views/Demo4';
 
 class DemoRouter extends Component {
   render() {
@@ -20,11 +21,15 @@ class DemoRouter extends Component {
             <li>
               <Link to="/demo3">demo3</Link>
             </li>
+            <li>
+              <Link to="/demo4">demo4</Link>
+            </li>
           </ul>
         </nav>
         <Route exact={true} strict={true} path="/demo1" component={Demo1} />
         <Route exact={true} strict={true} path="/demo2" component={Demo2} />
         <Route exact={true} strict={true} path="/demo3" component={Demo3} />
+        <Route exact={true} strict={true} path="/demo4" component={Demo4} />
         
       </Fragment>
       
