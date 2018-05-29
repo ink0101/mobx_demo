@@ -20,6 +20,14 @@ class Demo4 extends Component {
         <div className="con">
           <div className="box">
             全部
+            {/* {newState.list.map(item => 
+              <li key={item.id}>
+                {item.title}
+                <button className={item.status === 1 ? "del" : "recover"} onClick={() => {newState.edit({id: item.id, status: item.status === 1 ? 0 : 1})}}>
+                  {item.status === 1 ? "删除" : "恢复"}
+                </button>
+              </li>
+            )} */}
             <List type={0} store={newState} />
           </div>
 
