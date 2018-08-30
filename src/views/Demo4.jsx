@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { useStrict } from "mobx";
+// import { useStrict } from "mobx";
 import { observer } from "mobx-react";
 import TodoList from "../mobx/TodoList";
 import List from "../components/List"
 
-useStrict(true);
+// useStrict(true);
 const newState = new TodoList();
 
 @observer
